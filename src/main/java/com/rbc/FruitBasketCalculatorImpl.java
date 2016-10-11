@@ -9,7 +9,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by Gaurav on 10/10/2016.
+ * Created by Gaurav  on 10/10/2016.
  */
 public class FruitBasketCalculatorImpl implements FruitsBasketCalculator{
 
