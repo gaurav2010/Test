@@ -34,9 +34,9 @@ public class FruitBasketCalculatorImpl implements FruitsBasketCalculator{
         return fruitMappedBasket.entrySet().stream().map(
                 entry -> {
                     BigDecimal itemPrice = fruitPrices.get(entry.getKey());
-                    if(itemPrice == null){
+                    if(itemPrice == null)
                         throw new UnsupportedOperationException("Price for don't exist for fruit: " + entry.getKey());
-                    }
+
                     return fruitPrices.get(entry.getKey()).multiply(new BigDecimal(entry.getValue()));
                 }
         ).reduce(BigDecimal.ZERO, BigDecimal::add);
